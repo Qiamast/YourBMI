@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/main.css" />
+    <title>YourBMI</title>
+  </head>
+  <body>
+    <!----DOM:start----->
+    <div class="bmi-container">
+      <div class="bmi-calculator">
+        <div class="bmi-title-section">
+          <div class="application-title">
+            <span class="application-title-first">Your</span>
+            <img src="./Assets/images/bmi.png" alt="BMI Calculator"/>
+          </div>
+          <span class="application-description">Body Mass Index Calculator</span>
+        </div>
+        <div class="bmi-control-section">
+          <div class="cm-input">
+            <img src="./Assets/images/body-mass-index (2).png" class="range-input-icon" />
+            <input type="range" name="cm-range" id="cm-range-input" max="250" value="182" />
+            <label for="cm-range" class="cm-range-title">182 cm</label>
+          </div>
+          <div class="kg-input">
+            <img src="./Assets/images/bmi (2).png" class="range-input-icon" />
+            <input type="range" name="kg-range" id="kg-range-input" max="250" value="72" />
+            <label for="kg-range" class="kg-range-title">72 kg</label>
+          </div>
+        </div>
+        <div class="bmi-results-section">
+          <div class="bmi-calculated-results">
+            <img src="./Assets/images/body-mass-index (1).png" alt="bmi-logo">
+            <span class="title">21.7</span>
+          </div>
+          <div class="bmi-result-message">
+            <span class="message">Normal</span>
+            <img
+              src="./Assets/icons/Normal Weight.svg" class="message-icon"
+              alt="result-message-icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----DOM:end------->
+    <script src="./JavaScript/app.js"></script>
+  </body>
+</html>
